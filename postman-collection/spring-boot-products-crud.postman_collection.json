@@ -1,0 +1,336 @@
+{
+	"info": {
+		"_postman_id": "f8cfeafe-1a1a-4ccc-9185-cd980881fcf0",
+		"name": "spring boot tutorial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10277302"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "get list products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoZW50aWNhdGUtYXBpIiwic3ViIjoidmFnbmVycGVsYWlzQGdtYWlsLmNvbSIsImV4cCI6MTY4OTg5MTI1MX0.cA9I8nsygljEVaxoX4mCp77GGrezPrpxvRcIsJH1QUI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoZW50aWNhdGUtYXBpIiwic3ViIjoidmFnbmVycGVsYWlzQGdtYWlsLmNvbSIsImV4cCI6MTY4OTg5MTI1MX0.cA9I8nsygljEVaxoX4mCp77GGrezPrpxvRcIsJH1QUI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/products/d3a2bb08-7966-4184-92f7-0957f3dccbab",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"d3a2bb08-7966-4184-92f7-0957f3dccbab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoZW50aWNhdGUtYXBpIiwic3ViIjoidmFnbmVycGVsYWlzQGdtYWlsLmNvbSIsImV4cCI6MTY4OTg5MTI1MX0.cA9I8nsygljEVaxoX4mCp77GGrezPrpxvRcIsJH1QUI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Nvida RTX 3060\",\n  \"price\": 4000,\n  \"type\": \"ELETRONIC\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoZW50aWNhdGUtYXBpIiwic3ViIjoidmFnbmVycGVsYWlzQGdtYWlsLmNvbSIsImV4cCI6MTY4OTg4NTEyOH0.wLXwQCMSv38SdmUIBKOPyhmY24_iBqy-B3TyPIkKDA8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/products/d1eb8be7-f0b7-46a0-89c6-753a4840b486",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"d1eb8be7-f0b7-46a0-89c6-753a4840b486"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoZW50aWNhdGUtYXBpIiwic3ViIjoidmFnbmVycGVsYWlzQGdtYWlsLmNvbSIsImV4cCI6MTY4OTg5MTI1MX0.cA9I8nsygljEVaxoX4mCp77GGrezPrpxvRcIsJH1QUI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"price\": 100.00\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/products/d3a2bb08-7966-4184-92f7-0957f3dccbab",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"d3a2bb08-7966-4184-92f7-0957f3dccbab"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "auth/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"login\": \"user\",\n    \"password\": \"user\",\n    \"role\": \"USER\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "auth/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"login\": \"user\",\n    \"password\": \"user\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "get users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoZW50aWNhdGUtYXBpIiwic3ViIjoidmFnbmVycGVsYWlzQGdtYWlsLmNvbSIsImV4cCI6MTY4OTg5MzM1Mn0.1uJBisqf6AIC7XP5WfRxu1urG4anquoNnmt1EQrnlTY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoZW50aWNhdGUtYXBpIiwic3ViIjoidmFnbmVycGVsYWlzQGdtYWlsLmNvbSIsImV4cCI6MTY4OTg5MzM1Mn0.1uJBisqf6AIC7XP5WfRxu1urG4anquoNnmt1EQrnlTY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/users/46d37493-b15c-4584-bf8f-1e86aed982bf",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"46d37493-b15c-4584-bf8f-1e86aed982bf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoZW50aWNhdGUtYXBpIiwic3ViIjoidmFnbmVycGVsYWlzQGdtYWlsLmNvbSIsImV4cCI6MTY4OTg5MzM1Mn0.1uJBisqf6AIC7XP5WfRxu1urG4anquoNnmt1EQrnlTY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/users/d53b1587-1bd8-436a-9de0-dcfa64ae6d74",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"d53b1587-1bd8-436a-9de0-dcfa64ae6d74"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
