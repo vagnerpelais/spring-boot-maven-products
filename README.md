@@ -126,4 +126,4 @@ The application uses Flyway for database schema management. Database migrations 
 
 ## Postman collection
 
-[Download Postman Collection](./postman-collection.spring-boot-products-crud.postman_collection.json)
+[Download Postman Collection](./spring-boot-products-crud.postman_collection.json)
